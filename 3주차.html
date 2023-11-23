@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+
+            border:1px solid red;
+            height: 50px;
+        }
+        .box_container{
+            display:grid;
+            height: 300px;
+            grid-template-columns: 100px 200px;
+            justify-content: center;
+            gap: 10px;
+            align-items:end;
+        }
+        
+        .menu_container{
+        display:grid;
+        grid-auto-flow: column;
+        gap:20px;
+        justify-content:start;
+        }
+ 
+
+    </style>
+
+<link rel="stylesheet" href="./test.css">
+
+</head>
+<body>
+    <div class="box_container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <div class="menu_container">
+        <div class="menu">메뉴</div>
+        <div class="menu">메뉴</div>
+        <div class="menu">메뉴</div>
+        <div class="menu">메뉴</div>
+    </div>
+</body>
+</html>
